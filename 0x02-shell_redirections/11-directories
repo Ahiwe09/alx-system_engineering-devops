@@ -1,2 +1,2 @@
 #!/bin/bash
-fined . -type d -not -name '.' | wc -l
+fined . -type d -not -name '-' | wc -l

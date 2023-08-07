@@ -1,2 +1,2 @@
-#!/bim/bash
-fined . -empty | rev | cut -d '/' -f 1 | rev
+#!/bim/bashv
+find . -type d -empty -exec basename {} \; && find . -type f -empty -exec basename {} \;

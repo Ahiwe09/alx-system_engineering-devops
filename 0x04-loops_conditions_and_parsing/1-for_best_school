@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #writes "Best School" ten times on the console
 for _ in {1..10}
 do

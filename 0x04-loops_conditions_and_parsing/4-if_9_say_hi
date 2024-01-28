@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-#this script echos "Best School" ten times on the console
-n=10
-while [ $n -gt 0 ]
-do
-	if [ $n -gt 1 ]
-	then
-		echo "Best School"
-	else
-		echo "Hi"
-		echo "Best School"
-	fi
-	((n--))
+# This script echos "Best School" ten times, with a special case on the 9th iteration
+
+n=1
+while [ $n -le 10 ]; do
+    if [ $n -eq 9 ]; then
+        echo "Best School"
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((n++))
 done
+

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #this file echos "Best school" ten times on the console
 n=0
-until [ $n -gt 9 ]
+until [ $n -gt 9 ];
 do 
 	echo "Best School"
 	((n++))

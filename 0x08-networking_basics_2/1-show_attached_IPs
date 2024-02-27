@@ -2,6 +2,4 @@
 
 # Script that displays all active IPv4 IPs on the machine
 
-# Get IPv4 addresses for active interfaces using the 'ip' command
-ip -o -4 addr show scope global | awk '{print $4}' | cut -d'/' -f1
-
+ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
